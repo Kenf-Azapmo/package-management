@@ -1,0 +1,22 @@
+    START TOMCAT CONFIGURATION
+
+#Tomcat server configuration:
+find / -name server.xml context.xml
+vim /opt/tomcat9/conf/server.xml # to change the default port number
+vi /opt/tomcat9/webapps/manager/META-INF/context.xml # to be able to navigate on the tomcat GUI on the web browser
+vi /opt/tomcat9/conf/tomcat-user.xml  # to add user
+
+
+vi /opt/tomcat9/conf/tomcat-user.xml  # to add user
+  
+    <user username="azapmo" password="admin" roles="manager-gui,admin-gui,manager-script"/>
+    <user username="landmark" password="admin" roles="admin-gui"/>
+
+
+# vi in the file bellow, then make a comment on this two lines bellow in context.xml file 
+    vi /opt/tomcat9/webapps/manager/META-INF/context.xml   
+        <!--
+            <Valve className="org.apache.catalina.valves.RemoteCIDRValve" 
+            allow="127.0.0.0/8,::1/128" />
+        -->
+ # this comment enables us to acces/navigate on the tomat GUI on our web browser
