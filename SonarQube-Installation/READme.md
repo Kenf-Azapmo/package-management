@@ -1,4 +1,3 @@
-
 ## SonarQube Installation And Setup In AWS EC2 Redhat Instance.
 ##### Prerequisite
 + AWS Acccount.
@@ -23,7 +22,6 @@ sudo su - sonar
 sudo timedatectl set-timezone Africa/Douala
 ```
 ### 2. Install Java JDK 1.8+ required for sonarqube to start
-
 ``` sh
 cd /opt
 sudo yum install wget git nano unzip -y
@@ -33,7 +31,6 @@ sudo tar -xzf OpenJDK17U-jdk_x64_linux_hotspot_17.0.9_9.tar.gz -C /usr/lib/jvm
 export JAVA_HOME=/usr/lib/jvm/jdk-17.0.9+9
 export PATH=$JAVA_HOME/bin:$PATH
 java -version
-
 ```
 ## 3. Download and install(extract) sonarqube server software
 ```sh
