@@ -3,7 +3,7 @@ SonarQube Installation And Setup In AWS EC2 Redhat Instance.
 Prerequisite
     - AWS Acccount.
     - Create Redhat EC2 T2.medium Instance with 4GB RAM.
-    - Create Security Group and open Required ports.
+    - Create Security Group and open Required ports. 
         9000 ..etc
     - Attach Security Group to EC2 Instance.
     - Install java openJDK 1.8+ for SonarQube version 7.8
@@ -32,6 +32,7 @@ Prerequisite
     export JAVA_HOME=/usr/lib/jvm/jdk-17.0.9+9
     export PATH=$JAVA_HOME/bin:$PATH
     java -version
+
 
 3. Download and Installation (Extract) the SonarqQube Server software.
 
