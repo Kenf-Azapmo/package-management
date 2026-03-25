@@ -1,6 +1,6 @@
-    START TOMCAT CONFIGURATION
+##### START TOMCAT CONFIGURATION
 
-#Tomcat server configuration:
+## Tomcat server configuration:
 find / -name server.xml context.xml
 vim /opt/tomcat9/conf/server.xml # to change the default port number
 vi /opt/tomcat9/webapps/manager/META-INF/context.xml # to be able to navigate on the tomcat GUI on the web browser
