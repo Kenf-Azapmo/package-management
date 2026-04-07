@@ -10,9 +10,9 @@ java -version
 # Install required tools
 sudo apt install wget curl -y
 # Download Jenkins .deb package (stable version)
-wget https://pkg.jenkins.io/debian-stable/binary/jenkins_2.440.1_all.deb
+wget https://pkg.jenkins.io/debian-stable/binary/jenkins_2.541.2_all.deb
 # Install Jenkins
-sudo apt install ./jenkins_2.440.1_all.deb -y
+sudo apt install ./jenkins_2.541.2_all.deb -y
 # Give sudo access to Jenkins user
 echo "jenkins ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/jenkins
 # Set password jenkins user password 
